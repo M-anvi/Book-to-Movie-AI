@@ -1,0 +1,568 @@
+[
+  {
+    "book": "Harry Potter Series",
+    "movie": "Harry Potter Series",
+    "faithfulness": "",
+    "differences": [],
+    "release_year": "",
+    "description": "The *Harry Potter* series follows the journey of a young wizard, Harry Potter, as he navigates life at Hogwarts, battles dark forces, and uncovers the truth about his mysterious past. The series consists of 8 movies based on J.K. Rowling's book series.\n\n❓ *Which specific Harry Potter movie would you like to know about?* (e.g., 'Harry Potter and the Sorcerer's Stone')",
+    "author": "J.K. Rowling",
+    "book_series": "Harry Potter",
+    "number_of_movies": 8
+},
+    {
+      "book": "Harry Potter and the Sorcerer's Stone",
+      "movie": "Harry Potter and the Sorcerer's Stone",
+      "faithfulness": "Mostly faithful",
+      "differences": [
+        "Peeves the Poltergeist was omitted.",
+        "Norbert's storyline was shortened.",
+        "Some scenes were trimmed or skipped."
+      ],
+      "release_year": 2001,
+      "description": "Young Harry discovers he's a wizard and attends Hogwarts, uncovering friendships and dark secrets.",
+      "author": "J.K. Rowling",
+      "book_series": "Harry Potter",
+      "number_of_movies": 8
+    },
+    {
+      "book": "Harry Potter and the Chamber of Secrets",
+      "movie": "Harry Potter and the Chamber of Secrets",
+      "faithfulness": "Very faithful",
+      "differences": [
+        "The character of Nearly Headless Nick's birthday party was shortened.",
+        "Some characters, like the house-elf Winky, were omitted.",
+        "Certain action scenes were expanded for cinematic effect."
+      ],
+      "release_year": 2002,
+      "description": "Harry returns to Hogwarts for his second year, where he uncovers a mystery involving a deadly creature and the Chamber of Secrets.",
+      "author": "J.K. Rowling",
+      "book_series": "Harry Potter",
+      "number_of_movies": 8
+    },
+    {
+      "book": "Harry Potter and the Prisoner of Azkaban",
+      "movie": "Harry Potter and the Prisoner of Azkaban",
+      "faithfulness": "Faithful with some modifications",
+      "differences": [
+        "The Marauder's Map storyline was altered for pacing.",
+        "The scene where Harry learns the truth about his parents' death is less detailed.",
+        "Some characters, like Peeves, were omitted."
+      ],
+      "release_year": 2004,
+      "description": "Harry learns that a dangerous prisoner, Sirius Black, has escaped from Azkaban, and soon discovers more about his family's past.",
+      "author": "J.K. Rowling",
+      "book_series": "Harry Potter",
+      "number_of_movies": 8
+    },
+    {
+      "book": "Harry Potter and the Goblet of Fire",
+      "movie": "Harry Potter and the Goblet of Fire",
+      "faithfulness": "Mostly faithful",
+      "differences": [
+        "Some subplots were omitted, such as the detailed Triwizard Tournament events.",
+        "The Quidditch World Cup scenes were shortened.",
+        "Some characters, like Winky the house-elf, were omitted."
+      ],
+      "release_year": 2005,
+      "description": "Harry competes in the Triwizard Tournament, facing life-threatening tasks, while a dark force begins to rise again.",
+      "author": "J.K. Rowling",
+      "book_series": "Harry Potter",
+      "number_of_movies": 8
+    },
+    {
+      "book": "Harry Potter and the Order of the Phoenix",
+      "movie": "Harry Potter and the Order of the Phoenix",
+      "faithfulness": "Faithful with some cuts",
+      "differences": [
+        "The book's subplots were trimmed for pacing.",
+        "Some key scenes were shortened, like Harry's interactions with the Order.",
+        "The character of Peeves was omitted again."
+      ],
+      "release_year": 2007,
+      "description": "Harry returns to Hogwarts for his fifth year, where he fights a growing dark force and forms 'Dumbledore's Army.'",
+      "author": "J.K. Rowling",
+      "book_series": "Harry Potter",
+      "number_of_movies": 8
+    },
+    {
+      "book": "Harry Potter and the Half-Blood Prince",
+      "movie": "Harry Potter and the Half-Blood Prince",
+      "faithfulness": "Mostly faithful with some changes",
+      "differences": [
+        "The film omits certain scenes, such as a more detailed backstory of Tom Riddle.",
+        "The battle at Hogwarts is much larger and more action-packed in the film.",
+        "Some romantic subplots are expanded in the movie."
+      ],
+      "release_year": 2009,
+      "description": "Harry learns more about Voldemort's past and tries to destroy the dark wizard's horcruxes while facing personal loss.",
+      "author": "J.K. Rowling",
+      "book_series": "Harry Potter",
+      "number_of_movies": 8
+    },
+    {
+      "book": "Harry Potter and the Deathly Hallows – Part 1",
+      "movie": "Harry Potter and the Deathly Hallows – Part 1",
+      "faithfulness": "Very faithful",
+      "differences": [
+        "Some smaller details were adjusted for pacing.",
+        "The scene with the Deathly Hallows story in the book is expanded and visualized differently.",
+        "Certain minor characters were omitted or had reduced roles."
+      ],
+      "release_year": 2010,
+      "description": "Harry, Ron, and Hermione go on a dangerous mission to find and destroy Voldemort's horcruxes, as the wizarding world falls into darkness.",
+      "author": "J.K. Rowling",
+      "book_series": "Harry Potter",
+      "number_of_movies": 8
+    },
+    {
+      "book": "Harry Potter and the Deathly Hallows – Part 2",
+      "movie": "Harry Potter and the Deathly Hallows – Part 2",
+      "faithfulness": "Mostly faithful",
+      "differences": [
+        "Some minor book scenes were omitted or condensed for dramatic effect.",
+        "The final battle at Hogwarts is more intense and drawn out in the movie.",
+        "The epilogue was changed slightly for cinematic pacing."
+      ],
+      "release_year": 2011,
+      "description": "Harry faces Voldemort in the final battle, seeking to destroy the dark wizard once and for all. The fate of the wizarding world hangs in the balance.",
+      "author": "J.K. Rowling",
+      "book_series": "Harry Potter",
+      "number_of_movies": 8
+    },
+  {
+    "book": "The Fault in Our Stars",
+    "movie": "The Fault in Our Stars",
+    "faithfulness": "Very faithful",
+    "differences": [
+      "Minor scenes and side characters were cut.",
+      "Less focus on support group meetings."
+    ],
+    "release_year": 2014,
+    "description": "Two teenage cancer patients fall in love after meeting in a support group.",
+    "author": "John Green",
+    "book_series": "",
+    "number_of_movies": 1
+  },
+  {
+    "book": "The Hunger Games",
+    "movie": "The Hunger Games",
+    "faithfulness": "Quite faithful",
+    "differences": [
+      "The book delves deeper into Katniss's internal thoughts.",
+      "Madge Undersee's character was omitted.",
+      "Some scenes were condensed for pacing."
+    ],
+    "release_year": 2012,
+    "description": "Katniss volunteers to take her sister's place in a televised fight to the death.",
+    "author": "Suzanne Collins",
+    "book_series": "The Hunger Games",
+    "number_of_movies": 4
+  },
+  {
+    "book": "The Lord of the Rings: The Fellowship of the Ring",
+    "movie": "The Lord of the Rings: The Fellowship of the Ring",
+    "faithfulness": "Very faithful",
+    "differences": [
+      "Tom Bombadil's character was omitted.",
+      "Some events were reordered for cinematic flow.",
+      "Additional action sequences were added."
+    ],
+    "release_year": 2001,
+    "description": "A hobbit and his companions set out to destroy a powerful ring.",
+    "author": "J.R.R. Tolkien",
+    "book_series": "The Lord of the Rings",
+    "number_of_movies": 3
+  },
+  {
+    "book": "To Kill a Mockingbird",
+    "movie": "To Kill a Mockingbird",
+    "faithfulness": "Mostly faithful",
+    "differences": [
+      "Some subplots and characters were omitted.",
+      "The narrative perspective was adjusted for film.",
+      "Certain scenes were condensed."
+    ],
+    "release_year": 1962,
+    "description": "Atticus Finch defends a Black man unjustly accused of rape in the Deep South.",
+    "author": "Harper Lee",
+    "book_series": "",
+    "number_of_movies": 1
+  },
+  {
+    "book": "The Great Gatsby",
+    "movie": "The Great Gatsby (2013)",
+    "faithfulness": "Moderately faithful",
+    "differences": [
+      "Modern music was used in the soundtrack.",
+      "Some scenes were stylized for visual impact.",
+      "Nick's narration was expanded."
+    ],
+    "release_year": 2013,
+    "description": "A mysterious millionaire’s obsession with a former lover unfolds in the Roaring Twenties.",
+    "author": "F. Scott Fitzgerald",
+    "book_series": "",
+    "number_of_movies": 3
+  },
+  {
+    "book": "Pride and Prejudice",
+    "movie": "Pride and Prejudice (2005)",
+    "faithfulness": "Mostly faithful",
+    "differences": [
+      "Some dialogues were modernized.",
+      "Certain scenes were condensed.",
+      "Visual emphasis on romantic elements."
+    ],
+    "release_year": 2005,
+    "description": "Elizabeth Bennet navigates manners and matrimony in Regency‐era England.",
+    "author": "Jane Austen",
+    "book_series": "",
+    "number_of_movies": 2
+  },
+  {
+    "book": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "movie": "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe",
+    "faithfulness": "Very faithful",
+    "differences": [
+      "Some battle scenes were expanded.",
+      "Minor characters were given more screen time.",
+      "Visual effects enhanced fantasy elements."
+    ],
+    "release_year": 2005,
+    "description": "Four siblings enter a magical land and join the fight against an evil witch.",
+    "author": "C.S. Lewis",
+    "book_series": "The Chronicles of Narnia",
+    "number_of_movies": 3
+  },
+  {
+    "book": "The Shining",
+    "movie": "The Shining",
+    "faithfulness": "Loosely based",
+    "differences": [
+      "Significant plot changes.",
+      "Different character portrayals.",
+      "Altered ending."
+    ],
+    "release_year": 1980,
+    "description": "A family stays in an isolated hotel where supernatural forces drive the father mad.",
+    "author": "Stephen King",
+    "book_series": "",
+    "number_of_movies": 2
+  },
+  {
+    "book": "The Da Vinci Code",
+    "movie": "The Da Vinci Code",
+    "faithfulness": "Moderately faithful",
+    "differences": [
+      "Some puzzles were simplified.",
+      "Certain scenes were omitted.",
+      "Pacing was adjusted for film."
+    ],
+    "release_year": 2006,
+    "description": "A symbologist uncovers a secret society while investigating a murder at the Louvre.",
+    "author": "Dan Brown",
+    "book_series": "Robert Langdon",
+    "number_of_movies": 3
+  },
+  {
+    "book": "The Perks of Being a Wallflower",
+    "movie": "The Perks of Being a Wallflower",
+    "faithfulness": "Highly faithful",
+    "differences": [
+      "Some minor subplots were cut.",
+      "The book offers more of Charlie’s internal monologue."
+    ],
+    "release_year": 2012,
+    "description": "An introverted teen finds friendship and healing in high school.",
+    "author": "Stephen Chbosky",
+    "book_series": "",
+    "number_of_movies": 1
+  },
+  {
+    "book": "Divergent",
+    "movie": "Divergent",
+    "faithfulness": "Moderately faithful",
+    "differences": [
+      "The ending was changed to be more action-packed.",
+      "Some character development was reduced.",
+      "Amar and Edward were left out of the movie."
+    ],
+    "release_year": 2014,
+    "description": "In a dystopian society, a girl discovers she's Divergent—outside any one faction.",
+    "author": "Veronica Roth",
+    "book_series": "Divergent",
+    "number_of_movies": 3
+  },
+  {
+    "book": "Me Before You",
+    "movie": "Me Before You",
+    "faithfulness": "Very faithful",
+    "differences": [
+      "Some supporting characters had reduced screen time.",
+      "Few scenes were simplified for pacing."
+    ],
+    "release_year": 2016,
+    "description": "A caregiver forms an unexpected bond with a paralyzed man.",
+    "author": "Jojo Moyes",
+    "book_series": "",
+    "number_of_movies": 1
+  },
+  {
+    "book": "Gone Girl",
+    "movie": "Gone Girl",
+    "faithfulness": "Highly faithful",
+    "differences": [
+      "Very few differences; Gillian Flynn wrote the screenplay.",
+      "Minor scene alterations for runtime efficiency."
+    ],
+    "release_year": 2014,
+    "description": "A wife’s disappearance becomes the focus of a media circus and suspicion falls on her husband.",
+    "author": "Gillian Flynn",
+    "book_series": "",
+    "number_of_movies": 1
+  },
+  {
+    "book": "Twilight",
+    "movie": "Twilight",
+    "faithfulness": "Mostly faithful",
+    "differences": [
+      "Some internal dialogue and background details were skipped.",
+      "The movie changed a few scenes for visual effect.",
+      "Action scenes were expanded."
+    ],
+    "release_year": 2008,
+    "description": "A teenage girl falls for a vampire in her small town.",
+    "author": "Stephenie Meyer",
+    "book_series": "Twilight Saga",
+    "number_of_movies": 5
+  },
+  {
+    "book": "The Maze Runner",
+    "movie": "The Maze Runner",
+    "faithfulness": "Loosely based",
+    "differences": [
+      "The maze design was altered.",
+      "Some characters were removed or combined.",
+      "The ending was modified."
+    ],
+    "release_year": 2014,
+    "description": "A group of teens wake up in a deadly maze with no memory of the outside world.",
+    "author": "James Dashner",
+    "book_series": "The Maze Runner",
+    "number_of_movies": 3
+  },
+  {
+    "book": "The Girl on the Train",
+    "movie": "The Girl on the Train",
+    "faithfulness": "Moderately faithful",
+    "differences": [
+      "The setting was changed from London to New York.",
+      "A few plot points were simplified.",
+      "Character backstories were shortened."
+    ],
+    "release_year": 2016,
+    "description": "An alcoholic woman becomes entangled in a missing persons investigation.",
+    "author": "Paula Hawkins",
+    "book_series": "",
+    "number_of_movies": 1
+  },
+  {
+    "book": "A Walk to Remember",
+    "movie": "A Walk to Remember",
+    "faithfulness": "Moderately faithful",
+    "differences": [
+      "Set in the 1950s in the book, changed to the 1990s in the film.",
+      "Some events were modernized.",
+      "A few characters were adjusted or removed."
+    ],
+    "release_year": 2002,
+    "description": "A rebellious teen falls for a minister’s daughter with a secret illness.",
+    "author": "Nicholas Sparks",
+    "book_series": "",
+    "number_of_movies": 1
+  },
+  {
+    "book": "The Help",
+    "movie": "The Help",
+    "faithfulness": "Very faithful",
+    "differences": [
+      "Minor scenes and historical nuances were cut.",
+      "Some characters were slightly simplified.",
+      "The tone was made more uplifting."
+    ],
+    "release_year": 2011,
+    "description": "An aspiring writer documents the experiences of Black maids in 1960s Mississippi.",
+    "author": "Kathryn Stockett",
+    "book_series": "",
+    "number_of_movies": 1
+  },
+  {
+    "book": "Eragon",
+    "movie": "Eragon",
+    "faithfulness": "Not faithful",
+    "differences": [
+      "Major plot changes and character cuts.",
+      "Important story arcs were skipped.",
+      "The movie was criticized for straying far from the book."
+    ],
+    "release_year": 2006,
+    "description": "A farm boy finds a dragon egg and becomes a Dragon Rider tasked with saving his world.",
+    "author": "Christopher Paolini",
+    "book_series": "The Inheritance Cycle",
+    "number_of_movies": 1
+  },
+    {
+      "book": "After",
+      "movie": "After",
+      "faithfulness": "The movie is largely faithful to the book but makes some changes in the portrayal of Tessa and Hardin's relationship.",
+      "differences": [
+        "The movie takes more liberties in the development of Hardin's backstory.",
+        "Some character dynamics are altered for cinematic pacing."
+      ],
+      "release_year": 2019,
+      "description": "Tessa Young and Hardin Scott's romantic relationship begins with tension, love, and secrets as they navigate their differences and past baggage.",
+      "author": "Anna Todd",
+      "book_series": "After",
+      "number_of_movies": 5
+    },
+    {
+      "book": "After We Collided",
+      "movie": "After We Collided",
+      "faithfulness": "The adaptation sticks closely to the book's plot but makes some minor changes in pacing and character interactions.",
+      "differences": [
+        "Certain emotional scenes are condensed or altered to fit the movie's runtime.",
+        "Some side characters have reduced screen time compared to the book."
+      ],
+      "release_year": 2020,
+      "description": "The second installment of Tessa and Hardin's passionate and tumultuous relationship. The emotional fallout continues as they try to rebuild their bond, but trust issues threaten to tear them apart.",
+      "author": "Anna Todd",
+      "book_series": "After",
+      "number_of_movies": 5
+    },
+    {
+      "book": "After We Fell",
+      "movie": "After We Fell",
+      "faithfulness": "The movie adaptation closely follows the book, with only slight modifications to some scenes and dialogue.",
+      "differences": [
+        "The movie slightly changes some character motivations to make them more cinematic.",
+        "A few subplots are condensed or omitted entirely."
+      ],
+      "release_year": 2021,
+      "description": "Tessa and Hardin face even more challenges as they discover life-changing secrets. Their love is tested by personal demons and external pressures that could destroy their relationship.",
+      "author": "Anna Todd",
+      "book_series": "After",
+      "number_of_movies": 5
+    },
+    {
+      "book": "After Ever Happy",
+      "movie": "After Ever Happy",
+      "faithfulness": "The movie stays mostly true to the book but simplifies some of the emotional arcs to make them more accessible for the audience.",
+      "differences": [
+        "A few flashbacks from the book are condensed or omitted.",
+        "The pacing is faster compared to the book."
+      ],
+      "release_year": 2022,
+      "description": "The penultimate movie in the After saga, Tessa and Hardin's complicated love story reaches new heights, as they face their most difficult decisions yet.",
+      "author": "Anna Todd",
+      "book_series": "After",
+      "number_of_movies": 5
+    },
+    {
+      "book": "A Perfect Love",
+      "movie": "A Perfect Love",
+      "faithfulness": "This final movie ties up the story with some creative liberties, but remains faithful to the main themes of the book.",
+      "differences": [
+        "Some smaller details from the book are altered or omitted to create a more satisfying conclusion."
+      ],
+      "release_year": 2023,
+      "description": "The final chapter in the After series. Tessa and Hardin's relationship comes full circle as they find closure, healing, and discover what they truly want in life and love.",
+      "author": "Anna Todd",
+      "book_series": "After",
+      "number_of_movies": 5
+    },
+    {
+      "book": "Through My Window",
+      "movie": "Through My Window",
+      "faithfulness": "The movie stays true to the spirit of the book, although some romantic scenes were slightly adjusted for the screen.",
+      "differences": [
+        "The movie condenses several chapters to streamline the story.",
+        "Certain plot points are given more emphasis in the movie than in the book."
+      ],
+      "release_year": 2022,
+      "description": "Raquel and Ares share a passionate romance despite being neighbors and coming from completely different worlds. Their connection is undeniable, but challenges arise as they face their differences.",
+      "author": "Ariana Godoy",
+      "book_series": "Through My Window",
+      "number_of_movies": 3
+    },
+    {
+      "book": "Through My Window: Across the Sea",
+      "movie": "Through My Window: Across the Sea",
+      "faithfulness": "This sequel remains mostly faithful to the book, with a few changes in how some emotional scenes unfold.",
+      "differences": [
+        "Some subplots in the book are condensed for pacing.",
+        "Additional scenes were created to deepen the emotional connection between Raquel and Ares."
+      ],
+      "release_year": 2023,
+      "description": "Raquel and Ares struggle to make their love work as they confront the challenges of distance, trust, and emotional baggage. The second installment of their story explores new highs and lows.",
+      "author": "Ariana Godoy",
+      "book_series": "Through My Window",
+      "number_of_movies": 3
+    },
+    {
+      "book": "Through My Window: Forever and Always",
+      "movie": "Through My Window: Forever and Always",
+      "faithfulness": "The final movie in the series adheres to the book’s essence, with some modifications to enhance its cinematic appeal.",
+      "differences": [
+        "The ending is slightly altered for a more dramatic conclusion.",
+        "Certain secondary characters have larger roles in the film."
+      ],
+      "release_year": 2024,
+      "description": "The final chapter of Raquel and Ares’ journey as they fight to make their relationship last. Their love faces one last test as they both grow and learn what it takes to be together forever.",
+      "author": "Ariana Godoy",
+      "book_series": "Through My Window",
+      "number_of_movies": 3
+    },
+    {
+      "book": "Culpa Tuya",
+      "movie": "Culpa Tuya",
+      "faithfulness": "The movie adaptation sticks closely to the book's plot, with minimal changes made to keep the pacing tight.",
+      "differences": [
+        "Some emotional moments are condensed, while others are given more screen time.",
+        "Certain backstory details are enhanced for dramatic effect."
+      ],
+      "release_year": 2023,
+      "description": "The movie adaptation of Mercedes Ron's book follows Valeria and Nicolás, whose passionate romance is filled with drama, misunderstandings, and complicated emotions. Their love is tested by external pressures and their own insecurities.",
+      "author": "Mercedes Ron",
+      "book_series": "Culpa",
+      "number_of_movies": 2
+    },
+    {
+      "book": "Culpa Mia",
+      "movie": "Culpa Mia",
+      "faithfulness": "This movie remains largely faithful to the book, though some character arcs are slightly adjusted for the screen.",
+      "differences": [
+        "Some of the secondary characters are given more depth in the film.",
+        "The ending is slightly more optimistic than the book’s."
+      ],
+      "release_year": 2023,
+      "description": "Noah and Nico’s intense love story is complicated by miscommunication, family issues, and their own emotional struggles. The movie captures the passionate and tumultuous journey of their relationship.",
+      "author": "Mercedes Ron",
+      "book_series": "Culpa",
+      "number_of_movies": 2
+    },
+    {
+      "book": "It Ends With Us",
+      "movie": "It Ends With Us",
+      "faithfulness": "The adaptation stays true to the novel’s themes, with minor adjustments to certain relationships and scenes for cinematic purposes.",
+      "differences": [
+        "Some emotional scenes were simplified for a broader audience.",
+        "Certain plot points are altered to fit a two-hour runtime."
+      ],
+      "release_year": 2025,
+      "description": "Based on Colleen Hoover's novel, Lily Bloom navigates a love triangle that brings difficult choices. Her relationship with Ryle Kincaid is fraught with passion and domestic issues that challenge her perceptions of love.",
+      "author": "Colleen Hoover",
+      "book_series": "It Ends With Us",
+      "number_of_movies": 1
+    }
+  ]
+  

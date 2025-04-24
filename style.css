@@ -1,0 +1,256 @@
+/* Global resets */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+  transition: background 0.5s ease;
+}
+
+/* --- Splash Screen --- */
+.splash {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.splash video {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 120%; height: auto;
+  min-height: 120%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  filter: brightness(0.7) contrast(1.1);
+}
+.splash .overlay {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+.splash .overlay img {
+  width: 120px;
+  margin-bottom: 20px;
+  animation: logo-pop 1s ease-out;
+}
+.splash .overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+.splash .overlay button {
+  padding: 15px 40px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.2);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.splash .overlay button:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* Logo pop animation */
+@keyframes logo-pop {
+  0%   { transform: scale(0.5); opacity: 0; }
+  60%  { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); }
+}
+
+/* --- Chat App Container (initially hidden) --- */
+.app-container {
+  position: fixed;
+  position: relative;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  width: 100%; max-width: 600px;
+  height: 80vh;
+  background: rgba(255,255,255,0.9);
+  border-radius: 30px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  overflow: hidden;
+  z-index: 5;
+}
+
+/* Show chat after clicking Get Started */
+body.show-chat .splash {
+  opacity: 0;
+  pointer-events: none;
+}
+body.show-chat .app-container {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Animated blob SVG background inside chat */
+.app-container::before {
+  content: "";
+  position: absolute;
+  width: 150%; height: 150%;
+  top: -25%; left: -25%;
+  background: url('blob.svg') no-repeat center/cover;
+  opacity: 0.1;
+  pointer-events: none;
+  animation: float-blob 30s infinite ease-in-out;
+}
+@keyframes float-blob {
+  0%,100% { transform: translate(0,0) scale(1);}
+  50%     { transform: translate(20px, -20px) scale(1.1);}
+}
+
+/* Bot avatar & header */
+/* Bot header: avatar on the right, welcome text on the left */
+.bot-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;      /* Pushes content to the right */
+  gap: 15px;                       /* Space between text and avatar */
+  padding: 10px 20px;
+}
+
+.bot-welcome {
+  background: rgba(0,0,0,0.05);
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.bot-avatar {
+  margin: 0;
+}
+
+.bot-avatar img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid #4a90e2;
+}
+
+
+/* Chat messages */
+.chat-box {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.message {
+  max-width: 75%;
+  padding: 14px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  position: relative;
+}
+.message.user {
+  background: #d1ffd6;
+  align-self: flex-end;
+}
+.message.bot {
+  background: #e6f0ff;
+  align-self: flex-start;
+}
+
+/* Input area */
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: #fff;
+  border-top: 2px solid #eee;
+}
+.input-area input[type="text"] {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid #ccc;
+  border-radius: 30px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.input-area input[type="text"]:focus {
+  border-color: #4a90e2;
+}
+.input-area button {
+  margin-left: 15px;
+  padding: 14px 24px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.input-area button:hover {
+  background: #357bd8;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+    height: 90vh;
+  }
+  .splash .overlay h1 {
+    font-size: 2rem;
+  }
+  .splash .overlay button {
+    padding: 12px 30px;
+    font-size: 1rem;
+  }
+}
+
+/* ==== Chat Visibility Fix ==== */
+.app-container {
+  /* ensure it sits above everything */
+  z-index: 20 !important;
+  /* restore full visibility & centering */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+
+/* make sure splash is behind once chat shows */
+body.show-chat .splash {
+  z-index: 5;
+}
+
+/* blob overlay should never steal clicks */
+.app-container::before {
+  pointer-events: none;
+}
+
+/* Title in Times New Roman */
+.splash-card h1 {
+  font-family: "Times New Roman", serif;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: whitesmoke;
+}
