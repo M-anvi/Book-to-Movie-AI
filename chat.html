@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StoryCrafter - Adaptation Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    
+    <header class="profile-header" style="cursor: pointer;">
+      <img src="images/Profile (2).jpg" alt="User Avatar" id="avatarHome" class="avatar">
+      <h2>Hello, StoryCrafter!</h2>
+      <button class="theme-btn" id="themeToggle">Themes</button>
+    </header>
+    
+      
+<!-- Hidden dropdown with theme options -->
+<div id="theme-options" style="display: none; flex-direction: column; position: absolute; ">
+  <button data-theme="default">Default</button>
+  <button data-theme="dark-theme">Dark Theme</button>
+  <button data-theme="forest">Mystic Forest</button>
+  <button data-theme="pastel">Soft Pastel</button>
+  <button data-theme="ocean">Ocean Deep</button>
+</div>
+
+      
+
+    <!-- Main Actions -->
+    <section class="main-actions main-page">
+      <div class="action-card chat-option">
+        <span class="icon">💬</span>
+        <h3>Chat with StoryCrafter</h3>
+      </div>
+      <div class="action-card voice-option">
+        <span class="icon">🎙️</span>
+        <h3>Voice with StoryCrafter</h3>
+      </div>
+    </section>
+   
+    <!-- Hidden Chat Area -->
+   
+    
+    <div id="chatArea" style="display: none;">
+      <div class="chat-window">
+        <div class="messages" id="messages"></div>
+        
+        <div class="input-area">
+          <input type="text" id="userInput" placeholder="Type your message..." />
+          <button id="sendBtn">Send</button>
+          
+        </div>
+      </div>
+    </div>
+ 
+   
+    
+<!-- Chat Area Section (Initially Hidden) -->
+<section id="chatArea" style="display: none;">
+  <!-- Chat UI elements here -->
+  <div id="messages"></div>
+</section>
+   <!-- Hidden Voice Area -->
+<div id="voiceArea" style="display: none;">
+  <div class="voice-window">
+    <div class="voice-header">
+      <h2>Voice Assessment</h2>
+      <p>Go ahead, I'm listening...</p>
+    </div>
+    <div class="voice-visualizer">
+      <!-- Fake visual effect for now -->
+      <div class="visualizer-shape"></div>
+      <img src="images/download (1).gif" class="abstract-visual">
+    </div>
+    <div class="voice-description">
+      <p><span class="highlight">Here is your voice analysis!</span></p>
+    </div>
+        <!-- 🔽 NEW RESPONSE BOX GOES HERE -->
+        <div class="voice-response-box">
+          <div class="voice-response-content"></div>
+        </div>
+    <div class="voice-controls">
+      <button class="mic-button">🎤</button>
+    </div>
+  </div>
+</div>
+<!-- Topics Section -->
+<section class="topics-section">
+  <div class="section-header">
+    <h3>Topics</h3>
+  </div>
+
+  <div class="topics">
+   
+    <div class="topic" data-topic="characters" onclick="toggleCharacterOptions()">Characters</div>
+    <div class="character-options" id="character-options" style="display: none;">
+      <button onclick="selectCharacter('Hermione Granger')">Hermione Granger</button>
+      <button onclick="selectCharacter('Rancho')">Rancho</button>
+      <button onclick="selectCharacter('Lily Bloom')">Lily Bloom</button>
+      <button onclick="selectCharacter('Don Vito Corleone')">Don Vito Corleone</button>
+    </div>
+
+   
+  </div>
+</section>
+
+<!-- Quiz Button (Updated to open quiz.html) -->
+<div class="quiz-button-container">
+  <button id="quizBtn" class="quiz-btn" onclick="window.location.href='quiz.html';">🎮 Start Book-to-Movie Quiz</button>
+</div>
+
+
+    <!-- History Section -->
+    <section class="history-section">
+      <div class="section-header">
+        <h3>History</h3>
+        <div style="display: flex; flex-direction: column; align-items: flex-start;">
+          <button id="clearHistoryBtn" style="background: none; border: none; color: red; cursor: pointer; font-size: 14px; padding: 0; margin-top: 5px;">Clear History</button>
+        </div>
+      </div>
+    
+      <div class="history-list">
+        <div class="history-item">
+          <span class="history-icon">📝</span>
+          <div class="history-text">
+            <p>How to adapt Harry Potter's first book?</p>
+            <small>26/04/2025</small>
+          </div>
+        </div>
+        <div class="history-item">
+          <span class="history-icon">📝</span>
+          <div class="history-text">
+            <p>Perfect character arcs for a romance novel</p>
+            <small>25/04/2025</small>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

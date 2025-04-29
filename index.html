@@ -2,51 +2,45 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Book to Movie Chatbot</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meet StoryCrafter!</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <!-- Splash Screen -->
-<div class="splash">
-  <video src="background.mp4" autoplay loop muted playsinline></video>
-  <div class="overlay">
-    <div class="splash-card">
-      <!-- Everything now lives in the circle-frame -->
-      <div class="circle-frame">
-        <img src="logo.png" alt="Chatbot Logo" />
-        <h1>Book‑to‑Movie Adaptaion Guide</h1>
-        <button id="start-btn">Get Started</button>
-      </div>
+  <!-- Background Video -->
+  <video autoplay muted loop class="background-video">
+    <source src="Home bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="background"></div>
+  
+  <div class="home-container">
+    <div class="top-text">
+      <p class="white-text">Meet the</p>
+      <h1 class="purple-text">StoryCrafter!</h1>
     </div>
+
+    <div class="robot-container">
+      <div class="speech-bubble">Need our help now?</div>
+      <img src="images/Robo-Photo.png" alt="StoryCrafter Robot" class="robot-img">
+    </div>
+    
+    
+    
+  <div class="bottom-button">
+    <button id="get-started-btn">
+      Get Started <span class="arrow">➔</span>
+    </button>
   </div>
-</div>
+  
 
-
-  <!-- Chat App (initially hidden, will fade in) -->
-  <div class="app-container">
-    <div class="bot-header">
-      <div class="bot-welcome">
-        Book2Film Guide
-      </div>
-      <div class="bot-avatar">
-        <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="Bot Avatar" />
-      </div>
-    </div>
-    <div class="chat-box" id="chat-box">
-      <!-- Chat messages will appear here -->
-    </div>
-    <div class="input-area">
-      <input type="text" id="user-input" placeholder="Ask me about any book-to-movie adaptation...">
-      <button onclick="handleUserInput()">Send</button>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
   <script>
-    // Toggle from splash to chat
-    document.getElementById('start-btn').addEventListener('click', () => {
-      document.body.classList.add('show-chat');
+    const getStartedBtn = document.getElementById('get-started-btn');
+    getStartedBtn.addEventListener('click', () => {
+      window.location.href = "chat.html"; // Redirect to chat
     });
   </script>
+
 </body>
 </html>

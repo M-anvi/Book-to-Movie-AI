@@ -1,0 +1,118 @@
+[
+    {
+        "name": "Harry Potter",
+        "actor": "Daniel Radcliffe",
+        "role": "The protagonist of the series. Harry is an orphaned wizard who learns about his magical heritage on his 11th birthday. He is brave, loyal, and has a strong sense of justice.",
+        "background": "Harry grew up in the Muggle world with his abusive aunt and uncle.",
+        "traits": ["Bravery", "Loyalty", "Courage"],
+        "key_moments": [
+            "Defeating Lord Voldemort as a baby.",
+            "Surviving the Triwizard Tournament.",
+            "Destroying Voldemort's Horcruxes."
+        ]
+    },
+    {
+        "name": "Hermione Granger",
+        "actor": "Emma Watson",
+        "role": "One of Harry's best friends. Hermione is known for her intellect, quick thinking, and unwavering loyalty. She plays a crucial role in helping Harry on his journey.",
+        "background": "Hermione is a Muggle-born witch who excels at magic.",
+        "traits": ["Intelligence", "Bravery", "Loyalty"],
+        "key_moments": [
+            "Using the Time-Turner to help Harry and save Sirius.",
+            "Solving the puzzle with the three-headed dog in 'The Sorcerer's Stone'.",
+            "Helping destroy Horcruxes."
+        ]
+    },
+    {
+        "name": "Ron Weasley",
+        "actor": "Rupert Grint",
+        "role": "Harry's other best friend. Ron comes from a loving family and is known for his loyalty, humor, and courage. He often finds himself in tough situations but always supports his friends.",
+        "background": "Ron is the youngest son of the Weasley family.",
+        "traits": ["Loyalty", "Humor", "Bravery"],
+        "key_moments": [
+            "Helping Harry win the Wizard's Chess game in 'The Sorcerer's Stone'.",
+            "Standing by Harry during the Battle of Hogwarts.",
+            "Facing his fears to help defeat the Death Eaters."
+        ]
+    },
+    {
+        "name": "Albus Dumbledore",
+        "role": "The wise and kind-hearted headmaster of Hogwarts. Dumbledore is a key figure in Harry's life and guides him through many challenges, though he keeps some important secrets.",
+        "traits": ["Wisdom", "Kindness", "Leadership"],
+        "key_moments": [
+            "Guiding Harry and his friends through the challenges at Hogwarts.",
+            "Revealing the truth about Harry's connection to Voldemort.",
+            "Sacrificing himself to help Harry defeat Voldemort."
+        ]
+    },
+    {
+        "name": "Lord Voldemort",
+        "role": "The primary antagonist in the series. Voldemort is a dark wizard obsessed with conquering the wizarding world and eliminating those he deems unworthy, including Muggle-borns.",
+        "traits": ["Power-hungry", "Evil", "Ruthless"],
+        "key_moments": [
+            "Attempting to kill Harry as a baby.",
+            "Creating the Horcruxes to attain immortality.",
+            "Facing Harry in the final battle at Hogwarts."
+        ]
+    },
+    {
+        "name": "Rancho",
+        "actor": "Aamir Khan",
+        "role": "A brilliant and unconventional student who challenges the educational system and inspires his friends to pursue passion over pressure.",
+        "background": "Rancho comes from a modest background and hides his true identity to attend ICE.",
+        "traits": ["Genius", "Innovative", "Compassionate"],
+        "key_moments": [
+            "Questioning the rote-learning system.",
+            "Saving a baby during a power outage delivery.",
+            "Reuniting with friends after years of separation."
+        ]
+    },
+    {
+        "name": "Farhan Qureshi",
+        "actor": "R. Madhavan",
+        "role": "Rancho’s friend who aspires to be a wildlife photographer but is pressured into engineering by his father.",
+        "background": "Comes from a middle-class family with a strict father.",
+        "traits": ["Loyal", "Creative", "Courageous"],
+        "key_moments": [
+            "Confronting his father about his true passion.",
+            "Supporting Rancho during crises.",
+            "Becoming a successful wildlife photographer."
+        ]
+    },
+    {
+        "name": "Raju Rastogi",
+        "actor": "Sharman Joshi",
+        "role": "Rancho’s other best friend who struggles with poverty and fear of failure.",
+        "background": "From a poor family relying on his success.",
+        "traits": ["Anxious", "Loyal", "Determined"],
+        "key_moments": [
+            "Attempting suicide and recovering.",
+            "Gaining self-confidence.",
+            "Getting a job through honesty in an interview."
+        ]
+    },
+    {
+        "name": "Lily Bloom",
+        "actor": "Blake Lively",
+        "role": "The protagonist of 'It Ends With Us'. A woman who overcomes a painful past and finds herself in a difficult romantic relationship.",
+        "background": "Survived childhood abuse and is determined to live a better life.",
+        "traits": ["Resilient", "Independent", "Empathetic"],
+        "key_moments": [
+            "Starting her own flower shop.",
+            "Falling in love with Ryle.",
+            "Choosing to break the cycle of abuse for her daughter’s sake."
+        ]
+    },
+    {
+        "name": "Don Vito Corleone",
+        "actor": "Marlon Brando",
+        "role": "The head of the Corleone mafia family in *The Godfather*. He is a powerful and respected figure who balances crime with a strong sense of family loyalty.",
+        "background": "Immigrated from Sicily and rose to power through cunning and influence.",
+        "traits": ["Wise", "Ruthless", "Family-oriented"],
+        "key_moments": [
+            "Surviving an assassination attempt.",
+            "Guiding Michael to take over the family.",
+            "Establishing peace between warring mafia families."
+        ]
+    }
+]

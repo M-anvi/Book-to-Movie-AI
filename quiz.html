@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book-to-Movie Quiz</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(to right, #4A148C, #6A1B9A);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      min-height: 100vh;
+    }
+  
+    header {
+      background: linear-gradient(to right, #6A1B9A, #8E24AA);
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      position: relative;
+    }
+  
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+  
+    button {
+      background-color: #8E24AA;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    }
+  
+    button:hover {
+      background-color: #BA68C8;
+      transform: translateY(-2px);
+    }
+  
+    #homeButton {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+  
+    #homeButton:hover {
+      transform: scale(1.2);
+    }
+  
+    .quiz-container {
+      width: 90%;
+      max-width: 800px;
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    }
+  
+    .quiz-question {
+      margin-bottom: 30px;
+    }
+  
+    .quiz-question p {
+      font-size: 22px;
+      margin-bottom: 15px;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .quiz-gif {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      border-top-right-radius: 16px;
+      border-top-left-radius: 16px;
+      display: block;
+      margin:0 auto;
+    }
+  
+    .quiz-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .quiz-option {
+      background: linear-gradient(to right, #D1C4E9, #E1BEE7);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 18px;
+      color: #4A148C;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+  
+    .quiz-option:hover {
+      background: linear-gradient(to right, #BA68C8, #E1BEE7);
+      transform: translateY(-3px);
+    }
+  
+    .quiz-option.correct {
+      background: linear-gradient(to right, #7B1FA2, #8E24AA);
+      color: white;
+    }
+  
+    .quiz-option.incorrect {
+      background: linear-gradient(to right, #D32F2F, #E57373);
+      color: white;
+    }
+  
+    .answer-feedback {
+      margin-top: 10px;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 8px;
+      text-align: center;
+    }
+  
+    .correct-feedback {
+      background-color: #7B1FA2;
+      color: white;
+    }
+  
+    .incorrect-feedback {
+      background-color: #D32F2F;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button id="homeButton">🏠 Home</button>
+    <h1>Book-to-Movie Quiz</h1>
+  </header>
+  
+  <div class="quiz-container">
+    <!-- Quiz content will be injected here -->
+  </div>
+
+  <script>
+    // Custom ordered quiz questions
+    const quizQuestions = [
+      {
+        question: "Which magic spell is part of the Charms class at Hogwarts School of Witchcraft and Wizardry?",
+        options: ["Wingardium Leviosa", "Lumos", "Stupefy"],
+        correctAnswer: "Wingardium Leviosa",
+        gif: "images/Wingardium.gif",
+      },
+     
+      {
+        question: "'It Ends With Us' was adapted into a movie starring which actress?",
+        options: ["Blake Lively", "Emma Watson", "Dakota Johnson"],
+        correctAnswer: "Blake Lively",
+        gif: "images/Lively.gif"
+      },
+      {
+        question: "Which movie is based on J.K. Rowling's Harry Potter series?",
+        options: ["The Hobbit", "Harry Potter and the Sorcerer's Stone", "Percy Jackson"],
+        correctAnswer: "Harry Potter and the Sorcerer's Stone",
+        gif: "images/Potter.gif"
+      },
+     
+      {
+        question: "Which Indian film is based on an original story and not a book?",
+        options: ["The Lunchbox (2013)", "2 States", "Raavan"],
+        correctAnswer: "The Lunchbox (2013)",
+        gif: "images/Irrfan Khan GIF.gif"
+      },
+      {
+        question: "Who played the character of Hermione Granger?",
+        options: ["Emma Watson", "Scarlett Johansson", "Jennifer Lawrence"],
+        correctAnswer: "Emma Watson",
+        gif: "images/Granger.gif"
+      },
+      {
+        question: "Which book was adapted into 'The Lord of the Rings' movie?",
+        options: ["The Hobbit", "The Chronicles of Narnia", "The Lord of the Rings"],
+        correctAnswer: "The Lord of the Rings",
+        gif: "images/Rings.gif"
+      },
+      
+      {
+        question: "'2 States' movie is based on the novel written by which author?",
+        options: ["Chetan Bhagat", "Amish Tripathi", "Arundhati Roy"],
+        correctAnswer: "Chetan Bhagat",
+        gif: "images/2 states bollywood GIF.gif"
+      },
+      {
+        question: "Who wrote the 'The Chronicles of Narnia' book series?",
+        options: ["J.R.R. Tolkien", "C.S. Lewis", "J.K. Rowling"],
+        correctAnswer: "C.S. Lewis",
+        gif: "images/Narnia.gif"
+      },
+      {
+        question: "Which Indian movie was inspired by the epic 'Ramayana'?",
+        options: ["Raavan (2010)", "Baahubali", "Padmaavat"],
+        correctAnswer: "Raavan (2010)",
+        gif: "images/Raavan.gif"
+      }
+      
+     
+    ];
+
+    let currentQuestionIndex = 0;
+    let score = 0;
+
+    function loadCurrentQuestion() {
+      const quizContainer = document.querySelector('.quiz-container');
+      quizContainer.innerHTML = '';
+
+      if (currentQuestionIndex < quizQuestions.length) {
+        const q = quizQuestions[currentQuestionIndex];
+
+        const questionElement = document.createElement('div');
+        questionElement.classList.add('quiz-question');
+        questionElement.innerHTML = `
+          <img src="${q.gif}" alt="Question GIF" class="quiz-gif">
+          <p>${q.question}</p>
+          <div class="quiz-options">
+            ${q.options.map(option => `<button class="quiz-option">${option}</button>`).join('')}
+          </div>
+          <div class="answer-feedback" id="feedback"></div>
+          <button id="nextButton" style="display:none; margin-top:20px;">Next ➡️</button>
+        `;
+        quizContainer.appendChild(questionElement);
+
+        const options = questionElement.querySelectorAll('.quiz-option');
+        options.forEach(option => {
+          option.addEventListener('click', () => checkAnswer(option, q.correctAnswer));
+        });
+
+        document.getElementById('nextButton').addEventListener('click', () => {
+          currentQuestionIndex++;
+          loadCurrentQuestion();
+        });
+      } else {
+        showFinalResult();
+      }
+    }
+
+    function checkAnswer(selectedOption, correctAnswer) {
+      const options = document.querySelectorAll('.quiz-option');
+      options.forEach(option => {
+        option.disabled = true;
+        if (option.textContent === correctAnswer) {
+          option.classList.add('correct');
+        }
+      });
+
+      const feedbackElement = document.getElementById('feedback');
+      if (selectedOption.textContent === correctAnswer) {
+        selectedOption.classList.add('correct');
+        feedbackElement.textContent = "Correct! 🎉";
+        feedbackElement.classList.add('correct-feedback');
+        score++;
+      } else {
+        selectedOption.classList.add('incorrect');
+        feedbackElement.textContent = "Oops! The correct answer was highlighted! 🌟";
+        feedbackElement.classList.add('incorrect-feedback');
+      }
+
+      document.getElementById('nextButton').style.display = 'block';
+    }
+
+    function showFinalResult() {
+      const quizContainer = document.querySelector('.quiz-container');
+      let percentage = (score / quizQuestions.length) * 100;
+      let message = '';
+
+      if (percentage >= 80) {
+        message = `<h2>🎉 Congratulations! You're a Star! 🌟</h2>`;
+      } else {
+        message = `<h2>🚀 Good Attempt! Keep Trying! 🚀</h2>`;
+      }
+
+      quizContainer.innerHTML = `
+        ${message}
+        <p style="font-size: 20px;">You scored <strong>${score}</strong> out of <strong>${quizQuestions.length}</strong>!</p>
+        <button onclick="restartQuiz()">Restart Quiz 🔄</button>
+      `;
+    }
+
+    function restartQuiz() {
+      currentQuestionIndex = 0;
+      score = 0;
+      loadCurrentQuestion();
+    }
+
+    document.getElementById('homeButton').addEventListener('click', function() {
+      window.location.href = "index.html";
+    });
+
+    window.onload = function() {
+      loadCurrentQuestion();
+    };
+  </script>
+</body>
+</html>
